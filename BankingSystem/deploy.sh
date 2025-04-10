@@ -43,8 +43,8 @@ echo
 echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
 
 # Docker Image Tag
-IMAGE_NAME="banking-system"
-DOCKER_TAG="$DOCKER_USER/$IMAGE_NAME:v1"
+IMAGE_NAME="bank"
+DOCKER_TAG="$DOCKER_USER/$IMAGE_NAME:v2"
 
 echo "🐳 Building Docker image: $IMAGE_NAME"
 docker build -t $IMAGE_NAME .
